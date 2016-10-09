@@ -6,7 +6,7 @@ body {
 }
 
 ::selection {
-	background: whitesmoke;
+	background: rgba(0, 0, 0, 0.1);
 }
 
 #masthead {
@@ -19,8 +19,8 @@ img {
 
 .logo {
 	font-size: 150%;
-	font-family: "Bariol";
 	color: #262626;
+	letter-spacing: -0.2px;
 	text-transform: lowercase;
 }
 .logo:hover {
@@ -28,6 +28,7 @@ img {
 }
 .logo img {
 	height: 25px;
+	margin-right: 5px;
 	vertical-align: middle;
 }
 .logo span {
@@ -102,6 +103,9 @@ img {
 	background: #2790f3;
 	color: #fff;
 }
+.button.button-primary:hover {
+	background: #59aaf6;
+}
 .button.button-secondary {
 	background: transparent;
 	color: #2790f3;
@@ -135,14 +139,30 @@ h2 {
 .bottom-content {
 	text-align: center;
 }
+.bottom-content a {
+	display: block;
+	color: inherit;
+}
+.bottom-content a:hover {
+	text-decoration: none;
+}
 .bottom-content > div {
 	padding: 0 30px;
 }
 .bottom-content .actions {
 	margin-top: 10px;
+	font-weight: bold;
+	color: #2790f3;
+}
+.bottom-content i {
+	margin-left: 10px;
 }
 .bottom-content h2 {
 	font-size: 150%;
+	margin-top: 0;
+}
+.bottom-content a:hover .actions {
+	text-decoration: underline;
 }
 
 p:last-child {
@@ -152,4 +172,49 @@ p:last-child {
 #colophon {
 	padding: 50px 0;
 	background: #e9e9e9;
+}
+#colophon h3 {
+	font-size: 105%;
+	font-weight: bold;
+	margin-top: 0;
+}
+#colophon ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 2;
+}
+#colophon a {
+	color: inherit;
+}
+#colophon li a {
+	display: block;
+}
+#colophon p {
+	font-size: 90%;
+	color: #999;
+}
+
+.footer-content {
+	margin-top: 20px;
+}
+
+.press {
+	margin-top: -50px;
+	text-align: center;
+}
+.press .row:not(:last-child) {
+	margin-bottom: 30px;
+}
+.press img {
+	max-width: 90%;
+}
+
+.content-container {
+	margin-bottom: 100px;
+}
+
+.page-title {
+	text-align: center;
+	margin: 50px 0;
 }
