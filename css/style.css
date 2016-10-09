@@ -102,6 +102,7 @@ img {
 .button.button-primary {
 	background: #2790f3;
 	color: #fff;
+	zoom: 1.2;
 }
 .button.button-primary:hover {
 	background: #59aaf6;
