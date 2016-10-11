@@ -34,10 +34,13 @@ img {
 .logo span {
 	margin-left: -4px;
 }
+.logo-nav {
+	margin-top: 15px;
+}
 
 .nav {
 	text-align: right;
-	margin-top: 7px;
+	margin-top: 15px;
 }
 .nav ul {
 	list-style: none;
@@ -102,7 +105,9 @@ img {
 .button.button-primary {
 	background: #2790f3;
 	color: #fff;
-	zoom: 1.2;
+	padding: 9px 18px;
+	font-size: 1.2em;
+	font-weight: 500;
 }
 .button.button-primary:hover {
 	background: #59aaf6;
@@ -223,4 +228,69 @@ p:last-child {
 	padding: 100px 0;
 	text-align: center;
 	font-size: 200%;
+}
+
+@media (max-width: 700px) {
+	header#masthead {
+		margin: 0;
+		padding: 15px 2px;
+		border-bottom: 1px solid #ddd;
+		background: whitesmoke;
+	}
+	.logo-nav {
+		margin-top: 5px;
+		text-align: center;
+	}
+	nav, .nav {
+		text-align: center;
+		padding: 0;
+		line-height: 2.0;
+	}
+	section.hero {
+		font-size: 0.9em;
+		padding-top: 20px;
+	}
+	section.hero h1 {
+		font-size: 3.33em;
+	}
+	.shravan-hero img {
+		margin: 40px auto;
+		display: flex;
+	}
+	.press {
+		border-top: 1px solid #ddd;
+	}
+	.press img {
+		max-width: 80%;
+		padding: 10px;
+	}
+	.press .row:not(:last-child) {
+		margin-bottom: 0;
+	}
+	.bottom-content a.col-md-4 {
+		padding: 7.5px;
+		width: 80%;
+		margin: 20px auto;
+	}
+	footer#colophon .row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	footer#colophon .row div.col-md-4 {
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	footer#colophon .row div.col-md-4 p {
+		width: 80%;
+		margin: 10px auto;
+/*		text-align: left;
+*/	}
+	footer#colophon .row div:not(.col-md-4) {
+		width: 49%;
+		display: inline-block;
+		float: right;
+	}
+	footer#colophon .row div:not(.col-md-4) h3 {
+		margin-top: 15px;
+	}
 }

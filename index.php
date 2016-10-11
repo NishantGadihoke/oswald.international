@@ -98,7 +98,7 @@
 		<header id="masthead">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4 logo-nav">
 						<a class="logo" href="/" title="Go to Oswald <?php echo $site; ?>' home page">
 							<img alt="Oswald icon" src="https://cdn.oswald.foundation/1fef2-logo.png" draggable="false">
 							<strong>Oswald</strong> <span><?php echo $site; ?></span>
